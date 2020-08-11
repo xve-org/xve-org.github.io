@@ -417,6 +417,105 @@ input.input-error-LQL{
     border-radius: 50%;
     border: 1px solid #1ec7ac;
 } */
+/*  复用时注意 CSS 单位
+    375px 下实现 1rem === 50px
+ */
+.modal-wrapper-2dK{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.32rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    -webkit-animation: fadeOut-1Uj 0.3s ease-in-out;
+            animation: fadeOut-1Uj 0.3s ease-in-out;
+}
+.modal-show-shF{
+    opacity: 1;
+}
+.modal-31Q{
+    margin: 0 auto;
+    max-width: 5rem;
+    min-width: 4.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.1rem;
+}
+.modal-header-SuX{
+    padding-left: 0.2rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+    border-bottom: 1px solid #dee2e6;
+}
+.modal-content-1Wo{
+    max-height: 1.2rem;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.3rem;
+}
+.modal-footer-2mC{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+.modal-footer-2mC > a{
+    width: 50%;
+    padding: 0.2rem 0;
+    font-size: 0.28rem;
+}
+.modal-cancle-QXi{
+    border-left: 1px solid #dee2e6;
+}
+@-webkit-keyframes fadeOut-1Uj{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-1Uj{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .reset-wrapper-1cn{
 
 }
@@ -475,70 +574,4 @@ input.input-error-2aw{
 .reset-3Zj > a{
     color: #fff;
     font-weight: bolder;
-}
-/*  复用时注意 CSS 单位
-    375px 下实现 1rem === 50px
- */
-.modal-wrapper-2dK{
-    /* display: none; */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-31Q{
-    margin: 0 auto;
-    max-width: 4.5rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #fff;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border: 1px solid rgba(0,0,0,.2);
-}
-@media screen and (min-width:361px) and (max-width:375px) {
-    .modal-31Q{
-        font-size: 0.32rem;
-        border-radius: 0.1rem;
-        margin: 5rem auto;
-    }
-}
-.modal-header-SuX{
-    padding: 0.1rem 0.2rem;
-    font-weight: bolder;
-    line-height: 0.8rem;
-    font-size: 0.34rem;
-    border-bottom: 1px solid #dee2e6;
-}
-.modal-content-1Wo{
-    padding: 0.3rem 0.2rem;
-    border-bottom: 1px solid #dee2e6;
-}
-.modal-footer-2mC{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-}
-.modal-footer-2mC > a{
-    width: 50%;
-    padding: 0.2rem 0;
-    font-weight: bolder;
-    font-size: 0.28rem;
-}
-.modal-cancle-QXi{
-    border-left: 1px solid #dee2e6;
 }
